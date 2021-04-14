@@ -1,17 +1,16 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <Wrapper />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Wrapper from './components/Wrapper.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Wrapper
   }
 }
 </script>
@@ -21,8 +20,29 @@ export default {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: 700 !important;
+}
+
+
+
+
+.primary-color {
+  color: #ED9B33;
+}
+
+.primary-button {
+  background-color: #ED9B33 !important;
+  border: none !important;
+  outline: none !important;
+  transition: .5s;
+}
+
+.primary-button:hover {
+  background-color: #ffbf00 !important;
 }
 </style>
